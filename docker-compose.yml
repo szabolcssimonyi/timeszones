@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  timezones.api:
+    image: ${DOCKER_REGISTRY-}timezonesapi
+    container_name: timezones_api
+    build:
+      context: .
+      dockerfile: Services/TimeZones.Api/Dockerfile
+    ports:
+      - "17035:80"
+    environment:
+      "ASPNETCORE_ENVIRONMENT": "Development"
+    depends_on:
+      - timezones.db
+
+  timezones.db:
+    image: postgres:9.4
+    ports:
+      - "5433:5432" 
+    container_name: timezones_db
+    environment:
+      "POSTGRES_USER": "sa"
+      "POSTGRES_PASSWORD": "timezones"
+
+  timezones.db.admin:
+    image: dpage/pgadmin4
+    ports:
+      - "888:80"
+    container_name: timezones_db_admin
+    environment:
+      "PGADMIN_DEFAULT_EMAIL": "sa"
+      "PGADMIN_DEFAULT_PASSWORD": "timezones"

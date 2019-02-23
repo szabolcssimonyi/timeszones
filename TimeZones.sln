@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1156AE91-3D4F-4F76-B3C7-F2778A3DAEAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZones.Api", "Services\TimeZones.Api\TimeZones.Api.csproj", "{D7D65118-2DBC-4A18-93DD-4628984EF9F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZones.Extensibility", "Services\TimeZones.Extensibility\TimeZones.Extensibility.csproj", "{7E59B52B-61BA-4415-8B0B-742F04B0328D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZones.Domain", "Services\TimeZones.Domain\TimeZones.Domain.csproj", "{F5426C0B-5A0A-4BAE-BDB7-96AD3D4087ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZones.Service", "Services\TimeZones.Service\TimeZones.Service.csproj", "{C0A67454-CD41-4BB1-A7A1-3704B4FB856C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9AC91BD8-FE66-4427-B1C6-13C0F4D77190}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7D65118-2DBC-4A18-93DD-4628984EF9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D65118-2DBC-4A18-93DD-4628984EF9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D65118-2DBC-4A18-93DD-4628984EF9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D65118-2DBC-4A18-93DD-4628984EF9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E59B52B-61BA-4415-8B0B-742F04B0328D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E59B52B-61BA-4415-8B0B-742F04B0328D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E59B52B-61BA-4415-8B0B-742F04B0328D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E59B52B-61BA-4415-8B0B-742F04B0328D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5426C0B-5A0A-4BAE-BDB7-96AD3D4087ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5426C0B-5A0A-4BAE-BDB7-96AD3D4087ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5426C0B-5A0A-4BAE-BDB7-96AD3D4087ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5426C0B-5A0A-4BAE-BDB7-96AD3D4087ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A67454-CD41-4BB1-A7A1-3704B4FB856C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A67454-CD41-4BB1-A7A1-3704B4FB856C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A67454-CD41-4BB1-A7A1-3704B4FB856C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A67454-CD41-4BB1-A7A1-3704B4FB856C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AC91BD8-FE66-4427-B1C6-13C0F4D77190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC91BD8-FE66-4427-B1C6-13C0F4D77190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC91BD8-FE66-4427-B1C6-13C0F4D77190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC91BD8-FE66-4427-B1C6-13C0F4D77190}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7D65118-2DBC-4A18-93DD-4628984EF9F7} = {1156AE91-3D4F-4F76-B3C7-F2778A3DAEAE}
+		{7E59B52B-61BA-4415-8B0B-742F04B0328D} = {1156AE91-3D4F-4F76-B3C7-F2778A3DAEAE}
+		{F5426C0B-5A0A-4BAE-BDB7-96AD3D4087ED} = {1156AE91-3D4F-4F76-B3C7-F2778A3DAEAE}
+		{C0A67454-CD41-4BB1-A7A1-3704B4FB856C} = {1156AE91-3D4F-4F76-B3C7-F2778A3DAEAE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04866F5D-845C-4CE5-A7CF-D31BA682EB3B}
+	EndGlobalSection
+EndGlobal
