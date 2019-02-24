@@ -5,9 +5,13 @@ EXPOSE 443
 
 FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /src
-COPY Services/TimeZones.Api/TimeZones.Api.csproj Services/TimeZones.Api/
-RUN dotnet restore Services/TimeZones.Api/TimeZones.Api.csproj
 COPY . .
+
+WORKDIR /src/Tests/TimeZones.Test
+RUN dotnet restore
+RUN dotnet build TimeZones.Test.csproj -c Release -o /app
+RUN dotnet test
+
 WORKDIR /src/Services/TimeZones.Api
 RUN dotnet build TimeZones.Api.csproj -c Release -o /app
 
