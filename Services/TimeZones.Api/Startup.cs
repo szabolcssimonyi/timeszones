@@ -90,7 +90,6 @@ namespace TimeZones.Api
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))
                     };
                 });
-
             var container = new ContainerBuilder();
             container.RegisterModule<AutofacModule>();
             container.Populate(services);

@@ -5,15 +5,19 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1156AE91-3D4F-4F76-B3C7-F2778A3DAEAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZones.Api", "Services\TimeZones.Api\TimeZones.Api.csproj", "{D7D65118-2DBC-4A18-93DD-4628984EF9F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeZones.Api", "Services\TimeZones.Api\TimeZones.Api.csproj", "{D7D65118-2DBC-4A18-93DD-4628984EF9F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZones.Extensibility", "Services\TimeZones.Extensibility\TimeZones.Extensibility.csproj", "{7E59B52B-61BA-4415-8B0B-742F04B0328D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeZones.Extensibility", "Services\TimeZones.Extensibility\TimeZones.Extensibility.csproj", "{7E59B52B-61BA-4415-8B0B-742F04B0328D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZones.Domain", "Services\TimeZones.Domain\TimeZones.Domain.csproj", "{F5426C0B-5A0A-4BAE-BDB7-96AD3D4087ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeZones.Domain", "Services\TimeZones.Domain\TimeZones.Domain.csproj", "{F5426C0B-5A0A-4BAE-BDB7-96AD3D4087ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZones.Service", "Services\TimeZones.Service\TimeZones.Service.csproj", "{C0A67454-CD41-4BB1-A7A1-3704B4FB856C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeZones.Service", "Services\TimeZones.Service\TimeZones.Service.csproj", "{C0A67454-CD41-4BB1-A7A1-3704B4FB856C}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9AC91BD8-FE66-4427-B1C6-13C0F4D77190}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9F3953C6-E5F9-4F5A-92F2-95C22A6E6930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZones.Test", "..\TimeZones.Test\TimeZones.Test.csproj", "{28FF80AD-C5BC-4CD5-B1D4-C2DACA00B6AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{9AC91BD8-FE66-4427-B1C6-13C0F4D77190}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AC91BD8-FE66-4427-B1C6-13C0F4D77190}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AC91BD8-FE66-4427-B1C6-13C0F4D77190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28FF80AD-C5BC-4CD5-B1D4-C2DACA00B6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FF80AD-C5BC-4CD5-B1D4-C2DACA00B6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FF80AD-C5BC-4CD5-B1D4-C2DACA00B6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28FF80AD-C5BC-4CD5-B1D4-C2DACA00B6AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{7E59B52B-61BA-4415-8B0B-742F04B0328D} = {1156AE91-3D4F-4F76-B3C7-F2778A3DAEAE}
 		{F5426C0B-5A0A-4BAE-BDB7-96AD3D4087ED} = {1156AE91-3D4F-4F76-B3C7-F2778A3DAEAE}
 		{C0A67454-CD41-4BB1-A7A1-3704B4FB856C} = {1156AE91-3D4F-4F76-B3C7-F2778A3DAEAE}
+		{28FF80AD-C5BC-4CD5-B1D4-C2DACA00B6AF} = {9F3953C6-E5F9-4F5A-92F2-95C22A6E6930}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04866F5D-845C-4CE5-A7CF-D31BA682EB3B}

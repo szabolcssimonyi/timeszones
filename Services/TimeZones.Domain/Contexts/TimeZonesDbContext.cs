@@ -23,11 +23,5 @@ namespace TimeZones.Domain.Contexts
             optionsBuilder.UseNpgsql(connectionString, b => b.MigrationsAssembly("TimeZones.Api"));
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            //modelBuilder.Entity<TimeZoneEntity>().HasKey(t => t.Id);
-            //modelBuilder.Entity<UserTimeZoneEntity>().HasKey(t => t.Id);
-            // modelBuilder.Entity<UserTimeZoneEntity>().HasMany(tz => tz.TimeZoneEntities).WithOne(t=>t.UserTimeZoneEntity);
-        }
     }
 }
