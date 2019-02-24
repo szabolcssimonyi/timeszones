@@ -1,14 +1,15 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using TimeZones.Extensibility.Dto;
 using TimeZones.Extensibility.Interfaces;
 
 namespace TimeZones.Api.Controllers
 {
-    [Authorize]
     [Route("api/[Controller]")]
     [Produces("application/json")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class TimeZonesController : Controller
     {
         private readonly ITimeZonesRepository timeZonesRepository;
